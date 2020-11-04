@@ -10,8 +10,9 @@
     "css": ["main.css"]
   }
   ],
-  "description": "maximize video in tab",
+  "description": "expand video in tab",
   "icons": {
+    "240": "icon.png"
   },
   "manifest_version": 2,
   "name": "vid2tab",
