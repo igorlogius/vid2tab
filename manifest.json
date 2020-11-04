@@ -1,0 +1,23 @@
+{
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+  {
+    "matches": ["*://*/*"],
+    "css": ["main.css"]
+  }
+  ],
+  "description": "maximize video in tab",
+  "icons": {
+  },
+  "manifest_version": 2,
+  "name": "vid2tab",
+  "permissions": [
+    "menus",
+    "activeTab"
+  ],
+  "version": "1.0.0"
+}

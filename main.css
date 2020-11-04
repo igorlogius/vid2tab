@@ -1,0 +1,8 @@
+.vid2tab { 
+	position: fixed !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	z-index: 999999999999999999999 !important;
+}
