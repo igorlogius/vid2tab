@@ -1,6 +1,4 @@
-
 const extId = 'vid2tab';
-
 
 const CSS=`
 .vid2tab { 
@@ -12,7 +10,6 @@ const CSS=`
     z-index: 999999999999999999999 !important;
     visibility: visible !important;
 }
-
 .hide {
     visibility: hidden !important;
 }
@@ -22,11 +19,11 @@ function onError(e,m) {
 	console.error(e,m);
 }
 
-let maxedtabs={};
+let maxedtabs = {};
 
 browser.menus.create({   // menus permission
 	id: extId,
-	title: "Expand Video to Tab Size",
+	title: "Toggle Video Size",
 	documentUrlPatterns: [ "<all_urls>" ],
 	contexts: ["all","video","page"],
 	onclick(info,tab) {
@@ -61,6 +58,6 @@ browser.menus.create({   // menus permission
 		});
 	}
 },function(e){
-	onError(e,"failed background.js::browser.menus.create()");
+	onError(e, extId + `${extId}: failed background.js::browser.menus.create()`);
 });
 
