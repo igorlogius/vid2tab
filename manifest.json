@@ -4,7 +4,7 @@
       "background.js"
     ]
   },
-  "description": "expand video in tab",
+  "description": "expand video to tab size (vid2tab)",
   "icons": {
     "240": "icon.png"
   },
@@ -14,5 +14,5 @@
     "menus",
     "activeTab"
   ],
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
