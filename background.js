@@ -1,16 +1,36 @@
 
 const extId = 'vid2tab';
 
+
+const CSS=`
+.vid2tab { 
+    position: fixed !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 999999999999999999999 !important;
+    visibility: visible !important;
+}
+
+.hide {
+    visibility: hidden !important;
+}
+`;
+
 function onError(e,m) {
 	console.error(e,m);
 }
 
+let maxedtabs={};
+
 browser.menus.create({   // menus permission
-	id: extId, 
-	title: "Toggle Video Size",
+	id: extId,
+	title: "Expand Video to Tab Size",
 	documentUrlPatterns: [ "<all_urls>" ],
 	contexts: ["all","video","page"],
 	onclick(info,tab) {
+		browser.tabs.insertCSS({code: CSS});
 		browser.tabs.executeScript(tab.id, {
 			frameId: info.frameId,
 			code:`

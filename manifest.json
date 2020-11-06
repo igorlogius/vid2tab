@@ -4,12 +4,6 @@
       "background.js"
     ]
   },
-  "content_scripts": [
-  {
-    "matches": ["*://*/*"],
-    "css": ["main.css"]
-  }
-  ],
   "description": "expand video in tab",
   "icons": {
     "240": "icon.png"
@@ -20,5 +14,5 @@
     "menus",
     "activeTab"
   ],
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
