@@ -24,7 +24,7 @@ async function onMenuClicked(clickData, tab) {
 
 browser.menus.create({   // menus permission
 	id: extId,
-	title: "Toggle Video Size",
+	title: "Toggle Video Size (vid2tab)",
 	documentUrlPatterns: [ "<all_urls>" ],
 	contexts: ["all", "page", "link", "image", "editable", "video" ],
 	onclick: onMenuClicked,
